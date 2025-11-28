@@ -1,19 +1,23 @@
 /* [project]/components/WhyChooseUs/WhyChooseUs.module.css [app-client] (css) */
 .WhyChooseUs-module__49_FRW__section {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
   padding: 80px 40px;
 }
 
 .WhyChooseUs-module__49_FRW__tag {
-  background: #e9edfb;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 15px;
+  outline: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
 }
 
-.WhyChooseUs-module__49_FRW__topRow {
+.WhyChooseUs-module__49_FRW__topRow, .WhyChooseUs-module__49_FRW__headingWrapper {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -26,14 +30,21 @@
 }
 
 .WhyChooseUs-module__49_FRW__certTitle {
+  margin-top: 0;
   font-size: 16px;
 }
 
 .WhyChooseUs-module__49_FRW__visitLink {
+  color: #2b7ae2;
   align-items: center;
   gap: 6px;
-  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 500;
   display: flex;
+}
+
+.WhyChooseUs-module__49_FRW__visitLink:hover {
+  color: #11175c;
 }
 
 .WhyChooseUs-module__49_FRW__heading {
@@ -43,14 +54,13 @@
 
 .WhyChooseUs-module__49_FRW__cards {
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  gap: 0;
   margin-top: 50px;
   display: grid;
 }
 
 .WhyChooseUs-module__49_FRW__card {
   background: #fff;
-  border-radius: 22px;
   flex-direction: column;
   gap: 18px;
   padding: 35px 30px;
@@ -77,7 +87,7 @@
 }
 
 .WhyChooseUs-module__49_FRW__imageCard {
-  border-radius: 22px;
+  border-radius: 0 22px 22px 0;
   position: relative;
   overflow: hidden;
 }

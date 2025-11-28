@@ -7,10 +7,14 @@
 }
 
 .ServicesSection-module__ZVNfMW__tag {
-  background: #e9edfb;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 15px;
+  outline: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
 }
 
 .ServicesSection-module__ZVNfMW__topRow {

@@ -9,14 +9,14 @@
   display: flex;
   align-items: center;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* INNER CONTAINER – FIXED 1300PX HATA DIYA */
 .container {
   width: 100%;
-  max-width: 1350px;   
-  padding: 0 40px;      
+  max-width: 1350px;
+  padding: 0 40px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -28,20 +28,19 @@
 .logoBox {
   display: flex;
   align-items: center;
- 
-
 }
 
 .logo {
   object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 /* NAVIGATION */
 .nav {
   display: flex;
-  gap: 2px; 
-  margin: 0 auto; 
-  
+  gap: 5px;
+  margin: 0 auto;
 }
 
 /* LINKS */
@@ -49,24 +48,30 @@
   font-size: 18px;
   text-decoration: none;
   transition: 0.3s;
+  color: #13185d;
 }
-
+.link:hover {
+  background: #ededf1;
+  border-radius: 50px;
+}
+.link:active {
+  background: #ededf1;
+}
 /* ACTIVE PILL SHAPE */
 .active {
   padding: 12px 20px;
-  background: #eef0f8;
-  border-radius: 30px;
 }
 
 /* NAV HOVER */
 .link:hover {
-  color: #2A7AE2;
+  color: #000;
 }
+
 
 /* RIGHT BUTTON */
 .Header-btn {
   margin: 0;
-} 
+}
 .button {
   background: #cfd1dd;
   padding: 12px 25px;

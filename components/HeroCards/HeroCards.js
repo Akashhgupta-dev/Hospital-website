@@ -14,7 +14,7 @@ export default function HeroCards() {
     },
     {
       type: "stats",
-      icon: <Heart className={styles.statIcon} color="#1C4FD1" />,
+      icon: <Heart size={40}className={styles.statIcon} color="#1C4FD1" />,
       statLabel: "Smiles Transformed",
       statNumber: "5,000+",
     },
@@ -31,7 +31,7 @@ export default function HeroCards() {
     },
     {
       type: "testimonial",
-      icon: <Crown color="#1C4FD1" size={26} />,
+      icon: <Crown color="#1C4FD1" size={40} />,
       quote: "“Best dentist experience ever! Friendly staff and pain-free visits.”",
       quoteName: "— Sarah M",
     },

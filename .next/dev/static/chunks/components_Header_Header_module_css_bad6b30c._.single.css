@@ -30,28 +30,38 @@
 
 .Header-module__arFiJq__logo {
   object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .Header-module__arFiJq__nav {
-  gap: 2px;
+  gap: 5px;
   margin: 0 auto;
   display: flex;
 }
 
 .Header-module__arFiJq__link {
+  color: #13185d;
   font-size: 18px;
   text-decoration: none;
   transition: all .3s;
 }
 
+.Header-module__arFiJq__link:hover {
+  background: #ededf1;
+  border-radius: 50px;
+}
+
+.Header-module__arFiJq__link:active {
+  background: #ededf1;
+}
+
 .Header-module__arFiJq__active {
-  background: #eef0f8;
-  border-radius: 30px;
   padding: 12px 20px;
 }
 
 .Header-module__arFiJq__link:hover {
-  color: #2a7ae2;
+  color: #000;
 }
 
 .Header-module__arFiJq__Header-btn {

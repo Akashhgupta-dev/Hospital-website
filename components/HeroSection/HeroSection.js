@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./HeroSection.module.css";
 import LogoBadge from "../LogoBadge/LogoBadge";
 import HeroCards from "../HeroCards/HeroCards";
-import HeroBg from"@/public/images/hero-bg.jpg.png";
+import HeroBg from"@/public/images/hero-bg.avif";
 <div className={styles.logoContainer}>
   <LogoBadge />
 </div>;

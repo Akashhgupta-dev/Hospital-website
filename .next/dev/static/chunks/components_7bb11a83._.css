@@ -1,15 +1,14 @@
 /* [project]/components/HeroSection/HeroSection.module.css [app-client] (css) */
 .HeroSection-module__2k8MBW__hero {
-  width: 100%;
   margin-top: 80px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .HeroSection-module__2k8MBW__bgImage {
   border-radius: 0 0 20px 20px;
   width: 100%;
-  height: 900px;
+  height: 800px;
   position: absolute;
   inset: 0;
   overflow: hidden;
@@ -28,9 +27,9 @@
 
 .HeroSection-module__2k8MBW__overlay {
   z-index: 3;
-  background: linear-gradient(to right, #8369ff1f, #0000 60%);
+  background: linear-gradient(to top, #8369ff1f, #0000 20%);
   align-items: flex-start;
-  min-height: 600px;
+  min-height: 640px;
   padding-top: 160px;
   display: flex;
   position: relative;
@@ -38,7 +37,7 @@
 
 .HeroSection-module__2k8MBW__container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -46,17 +45,39 @@
 .HeroSection-module__2k8MBW__tagline {
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: .9rem;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .HeroSection-module__2k8MBW__title {
+  letter-spacing: -1px;
   margin-bottom: 1.5rem;
   font-size: 68px;
+  font-weight: 500;
 }
 
 .HeroSection-module__2k8MBW__highlight {
+  letter-spacing: -2px;
+  font-family: instrument\, sans-serif;
   font-size: 68px;
   font-style: italic;
+}
+
+.HeroSection-module__2k8MBW__ctaButton {
+  color: #fff;
+  background-color: #13195c;
+  border-radius: 50px;
+  padding: 1rem 1.8rem;
+  font-family: plus-jakarta-sans, sans-serif;
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+  box-shadow: 0 4px 10px #13195c4d;
+}
+
+.HeroSection-module__2k8MBW__ctaButton:hover {
+  background-color: #0a0e33;
+  transform: translateY(-2px);
 }
 
 .HeroSection-module__2k8MBW__cards {
@@ -197,9 +218,14 @@
 }
 
 .LogoBadge-module__H2QM5G__rotatingRing {
-  width: 200px;
-  height: 200px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: #fff6;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
   animation: 9s linear infinite LogoBadge-module__H2QM5G__rotate;
+  box-shadow: 0 6px 20px #0003;
 }
 
 @keyframes LogoBadge-module__H2QM5G__rotate {
@@ -214,31 +240,34 @@
 
 .LogoBadge-module__H2QM5G__circleText {
   fill: #13195c;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
 }
 
 .LogoBadge-module__H2QM5G__text {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .LogoBadge-module__H2QM5G__centerCircle {
-  background: radial-gradient(circle, #f0f0f0, #d8d8d8);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: #ffffff4d;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   display: flex;
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
   box-shadow: 0 6px 20px #0003;
 }
 
 .LogoBadge-module__H2QM5G__centerCircle span {
-  font-size: 54px;
+  color: #13195c;
+  font-size: 50px;
 }
 
 @media (max-width: 768px) {
@@ -280,22 +309,26 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-top: 50px;
+  margin-top: -120px;
   display: flex;
 }
 
 .HeroCards-module__eq6z4q__card {
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background: #fffc;
+  z-index: 3;
+  background: #fff;
   border-radius: 22px;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
-  height: 200px;
-  padding: 28px;
+  width: 260px;
+  height: 230px;
+  padding: 20px;
+  transition: all .3s;
   display: flex;
   box-shadow: 0 25px 55px #0000000f;
+}
+
+.HeroCards-module__eq6z4q__card:hover {
+  transform: translateY(-10px);
 }
 
 .HeroCards-module__eq6z4q__title {
@@ -304,6 +337,16 @@
 
 .HeroCards-module__eq6z4q__desc {
   font-size: 15px;
+}
+
+.HeroCards-module__eq6z4q__exploreBtn {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
 }
 
 .HeroCards-module__eq6z4q__statNumber {
@@ -383,7 +426,7 @@
 /* [project]/components/meet-doctor/meet-doctor.module.css [app-client] (css) */
 .meet-doctor-module__ddm7ya__section {
   width: 100%;
-  padding: 120px 0;
+  padding: 180px 0;
   position: relative;
 }
 
@@ -408,22 +451,40 @@
 }
 
 .meet-doctor-module__ddm7ya__tag {
-  background: #e9edfb;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 15px;
+  outline: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 400;
   display: inline-block;
 }
 
 .meet-doctor-module__ddm7ya__heading {
   margin-top: 25px;
-  font-size: 52px;
+  font-size: 46px;
 }
 
 .meet-doctor-module__ddm7ya__desc {
   max-width: 550px;
   margin-top: 22px;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.meet-doctor-module__ddm7ya__bgImageWrapper {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  overflow: hidden;
+}
+
+.meet-doctor-module__ddm7ya__bgImage {
+  width: 850px;
+  height: 650px;
 }
 
 .meet-doctor-module__ddm7ya__heroImage {
@@ -482,6 +543,12 @@
   margin-bottom: -15px;
 }
 
+.meet-doctor-module__ddm7ya__doctorBtn {
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 @media (max-width: 950px) {
   .meet-doctor-module__ddm7ya__wrapper {
     text-align: center;
@@ -505,19 +572,23 @@
 /* [project]/components/WhyChooseUs/WhyChooseUs.module.css [app-client] (css) */
 .WhyChooseUs-module__49_FRW__section {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
   padding: 80px 40px;
 }
 
 .WhyChooseUs-module__49_FRW__tag {
-  background: #e9edfb;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 15px;
+  outline: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
 }
 
-.WhyChooseUs-module__49_FRW__topRow {
+.WhyChooseUs-module__49_FRW__topRow, .WhyChooseUs-module__49_FRW__headingWrapper {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -530,14 +601,21 @@
 }
 
 .WhyChooseUs-module__49_FRW__certTitle {
+  margin-top: 0;
   font-size: 16px;
 }
 
 .WhyChooseUs-module__49_FRW__visitLink {
+  color: #2b7ae2;
   align-items: center;
   gap: 6px;
-  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 500;
   display: flex;
+}
+
+.WhyChooseUs-module__49_FRW__visitLink:hover {
+  color: #11175c;
 }
 
 .WhyChooseUs-module__49_FRW__heading {
@@ -547,14 +625,13 @@
 
 .WhyChooseUs-module__49_FRW__cards {
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  gap: 0;
   margin-top: 50px;
   display: grid;
 }
 
 .WhyChooseUs-module__49_FRW__card {
   background: #fff;
-  border-radius: 22px;
   flex-direction: column;
   gap: 18px;
   padding: 35px 30px;
@@ -581,7 +658,7 @@
 }
 
 .WhyChooseUs-module__49_FRW__imageCard {
-  border-radius: 22px;
+  border-radius: 0 22px 22px 0;
   position: relative;
   overflow: hidden;
 }
@@ -638,10 +715,14 @@
 }
 
 .ServicesSection-module__ZVNfMW__tag {
-  background: #e9edfb;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 15px;
+  outline: 1px solid #e5e5e5;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
 }
 
 .ServicesSection-module__ZVNfMW__topRow {

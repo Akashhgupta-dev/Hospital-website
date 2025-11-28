@@ -4,6 +4,9 @@ import { ArrowUpRight } from "lucide-react";
 import styles from "./WhyChooseUs.module.css";
 import whyChoose1 from "@/public/images/whychooseusteeth.svg";
 import whyChoose2 from "@/public/images/whychooseiconstate.svg";
+import whyChoose3 from "@/public/images/whychooseiconcare.svg"; 
+import whyChooseus2 from "@/public/images/whychooseus1.avif";
+
 export default function WhyChooseUs() {
   return (
     <section className={styles.section}>
@@ -11,11 +14,16 @@ export default function WhyChooseUs() {
       <div className={styles.topRow}>
         <p className={styles.tag}># WHY CHOOSE US</p>
 
+      </div>
+      <div className={styles.headingWrapper}>
+        <h2 className={styles.heading}>
+          The top reasons our <br /> patients love us
+          </h2>
         <div className={styles.certBox}>
           <Image
             src="/images/whychooseicon.svg"
-            width={50}
-            height={50}
+            width={70}
+            height={70}
             alt=""
           />
           <div>
@@ -23,20 +31,17 @@ export default function WhyChooseUs() {
               Certified by the American Dental Association
             </p>
             <a href="#" className={styles.visitLink}>
-              Schedule Your Visit <ArrowUpRight size={15} />
+              Schedule Your Visit <ArrowUpRight size={25} />
             </a>
           </div>
         </div>
+        
       </div>
-
-      <h2 className={styles.heading}>
-        The top reasons our <br /> patients love us
-      </h2>
 
       {/* ====== CONTENT CARDS ====== */}
       <div className={styles.cards}>
         {/* CARD 1 */}
-        <div className={styles.card}>
+        <div className={styles.card} style={{borderRadius:" 22px 0 0 22px"}}>
           <div className={styles.iconCircle}>
             <Image src={whyChoose1} width={40} height={40} alt="" />
           </div>
@@ -65,7 +70,7 @@ export default function WhyChooseUs() {
         <div className={styles.card}>
           <div className={styles.iconCircle}>
             <Image
-              src="/images/whychooseiconcare.svg"
+              src={whyChoose3}
               width={40}
               height={40}
               alt=""
@@ -83,9 +88,9 @@ export default function WhyChooseUs() {
         {/* RIGHT BIG IMAGE CARD */}
         <div className={styles.imageCard}>
           <Image
-            src="/images/whychooseus2.png"
+            src={whyChooseus2}
             alt="dental"
-            width={400}
+            width={500}
             height={500}
             className={styles.img}
           />

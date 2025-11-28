@@ -3,22 +3,26 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-top: 50px;
+  margin-top: -120px;
   display: flex;
 }
 
 .HeroCards-module__eq6z4q__card {
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background: #fffc;
+  z-index: 3;
+  background: #fff;
   border-radius: 22px;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
-  height: 200px;
-  padding: 28px;
+  width: 260px;
+  height: 230px;
+  padding: 20px;
+  transition: all .3s;
   display: flex;
   box-shadow: 0 25px 55px #0000000f;
+}
+
+.HeroCards-module__eq6z4q__card:hover {
+  transform: translateY(-10px);
 }
 
 .HeroCards-module__eq6z4q__title {
@@ -27,6 +31,16 @@
 
 .HeroCards-module__eq6z4q__desc {
   font-size: 15px;
+}
+
+.HeroCards-module__eq6z4q__exploreBtn {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
 }
 
 .HeroCards-module__eq6z4q__statNumber {

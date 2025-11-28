@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   /* min-height: px;  */
-  overflow: visible;
+  overflow: hidden;
   margin-top: 80px;
 }
 
@@ -10,7 +10,7 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 900px;
+  height: 800px;
   overflow: hidden;
   border-radius: 0 0 20px 20px;
 }
@@ -30,11 +30,11 @@
 .overlay {
   position: relative;
   z-index: 3;
-  min-height: 600px;
+  min-height: 640px;
   background: linear-gradient(
-    to right,
+    to top,
     rgba(131, 105, 255, 0.12),
-    transparent 60%
+    transparent 20%
   );
   display: flex;
   align-items: flex-start;
@@ -42,33 +42,39 @@
 }
 
 .container {
+  max-width: 1340px;
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .tagline {
-  font-size: 0.9rem;
+  font-size: 13px;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .title {
   margin-bottom: 1.5rem;
+  letter-spacing: -1px;
   font-size: 68px;
+  font-weight: 500;
 }
 
 .highlight {
+  font-family: "instrument, sans-serif";
   font-style: italic;
   font-size: 68px;
+  letter-spacing: -2px;
 }
 
-/* .ctaButton {
+.ctaButton {
   display: inline-block;
+  font-family: "plus-jakarta-sans", sans-serif;
   background-color: #13195c;
   color: white;
-  padding: 0.8rem 1.8rem;
+  padding: 1rem 1.8rem;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s;
@@ -78,7 +84,7 @@
 .ctaButton:hover {
   background-color: #0a0e33;
   transform: translateY(-2px);
-} */
+}
 
 /* Cards */
 .cards {

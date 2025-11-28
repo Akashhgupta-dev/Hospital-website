@@ -7,10 +7,14 @@
   z-index: 10;
 }
 .rotatingRing {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   animation: rotate 9s linear infinite;
-  
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+
 }
 
 @keyframes rotate {
@@ -19,34 +23,38 @@
   
 }
 .circleText {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   fill: #13195c;
   
 }
 
 .text {
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
+
 }
 
 /* Center circle with "M" */
 .centerCircle {
-  width: 120px;
-  height: 120px;
-  background: radial-gradient(circle, #f0f0f0, #d8d8d8);
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(12px);
   border-radius: 50%;
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+
 }
 
 .centerCircle span {
-  font-size: 54px;
+  font-size: 50px;
+  color: #13195c;
 }
 
 /* Responsive */

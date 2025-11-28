@@ -183,7 +183,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$HeroSection$2f
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$LogoBadge$2f$LogoBadge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/LogoBadge/LogoBadge.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$HeroCards$2f$HeroCards$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/HeroCards/HeroCards.js [app-rsc] (ecmascript)");
 (()=>{
-    const e = new Error("Cannot find module '@/public/images/hero-bg.png'");
+    const e = new Error("Cannot find module '@/public/images/hero-bg.'");
     e.code = 'MODULE_NOT_FOUND';
     throw e;
 })();
